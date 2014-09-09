@@ -1,8 +1,6 @@
 
-## set path
+## rsense
 export PATH=$PATH:/Users/u16suzu/.rsense/rsense-0.3
-
-
 
 # brew
 export PATH=$PATH:/usr/local/bin
@@ -11,7 +9,6 @@ export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:/Users/u16suzu/android/android-sdk-mac_x86/tools
 
 # mysql
-#export PATH=$PATH:/usr/local/mysql/bin
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib
 
 # node

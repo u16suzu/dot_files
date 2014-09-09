@@ -31,11 +31,8 @@ setopt noautoremoveslash
 # no beep sound when complete list displayed
 setopt nolistbeep
 
+
 ## Keybind configuration
-#
-# emacs like keybind (e.x. Ctrl-a gets to line head and Ctrl-e gets
-#   to end) and something additions
-#
 bindkey -e
 bindkey "^[[1~" beginning-of-line # Home gets to line head
 bindkey "^[[4~" end-of-line # End gets to line end
@@ -50,8 +47,11 @@ bindkey "^p" history-beginning-search-backward-end
 bindkey "^n" history-beginning-search-forward-end
 bindkey "\\ep" history-beginning-search-backward-end
 bindkey "\\en" history-beginning-search-forward-end
-# bindkey "^?" backward-kill-word # ctrl+back_space で 1単語削除
-bindkey "^w" backward-kill-word # shift+ctrl+hで 1単語削除
+
+
+bindkey "^t" kill-word          # ctrl+t で 後方の1単語削除
+bindkey "^w" backward-kill-word # ctrl+w で 前方の1単語削除
+
 
 
 # reverse menu completion binded to Shift-Tab
