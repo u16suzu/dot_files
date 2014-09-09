@@ -129,6 +129,14 @@ bindkey '^r' peco-select-history
 # bindkey '^@' peco-cdr
 
 
+
+# g o B
+alias -g B='`git branch -a | peco | head -n 1 | sed -e "s/^\*\s*//g"`'   
+
+
+
+
+
 source ~/.zsh/setting/export.sh
 source ~/.zsh/setting/prompt.sh
 source ~/.zsh/setting/alias.sh
